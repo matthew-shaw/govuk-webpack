@@ -1,1 +1,1 @@
-# govuk-webpack
+# GOV.UK Webpack Demo
