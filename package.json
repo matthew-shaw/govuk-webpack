@@ -1,7 +1,7 @@
 {
   "name": "govuk-webpack",
   "version": "1.0.0",
-  "description": "GOV.UK with Webpack",
+  "description": "GOV.UK Frontend with Webpack",
   "private": true,
   "scripts": {
     "format": "prettier . --write",
@@ -19,8 +19,8 @@
   "homepage": "https://github.com/matthew-shaw/govuk-webpack#readme",
   "devDependencies": {
     "prettier": "^3.5.1",
-    "webpack-cli": "^6.0.1",
-    "webpack": "^5.98.0"
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "govuk-frontend": "^5.8.0"
