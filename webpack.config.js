@@ -1,31 +1,33 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "production",
-  entry: "./src/index.js",
-  devtool: "source-map",
-  devServer: {
-    static: "./dist",
-  },
+  mode: "production", // or 'production' for optimized build
+  entry: "./src/index.js", // Your main JS entry point (if you have one)
   output: {
-    filename: "bundle.js",
+    filename: "main.js", // Output JS filename
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract CSS
+          "css-loader", // Process CSS
+          "sass-loader", // Compile Sass
+        ],
       },
     ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "styles.css", // Output CSS filename
+    }),
+  ],
+  resolve: {
+    // Allows you to import govuk-frontend directly
+    modules: [path.resolve(__dirname, "node_modules")],
   },
 };
