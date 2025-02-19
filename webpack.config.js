@@ -5,7 +5,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
+    filename: "js/main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "main.css",
+      filename: "css/main.css",
     }),
   ],
   resolve: {
