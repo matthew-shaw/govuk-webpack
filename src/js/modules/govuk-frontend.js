@@ -1,2 +1,3 @@
-import { initAll } from "govuk-frontend";
-initAll();
+import { Header, createAll } from "govuk-frontend";
+
+createAll(Header);
