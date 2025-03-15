@@ -1,5 +1,7 @@
 # GOV.UK Frontend Webpack Demo
 
+This repo demonstrates how to use Webpack to compile the minimum amount of CSS and JS needed to render a basic GOV.UK page.
+
 ## Get started
 
 ```shell
