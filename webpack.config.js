@@ -8,7 +8,7 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   devServer: {
-    static: "./dist",
+    static: path.resolve(__dirname, "dist")
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
