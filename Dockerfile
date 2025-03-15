@@ -1,4 +1,4 @@
-FROM node:jod-alpine AS builder
+FROM node:jod-alpine
 
 WORKDIR /app
 
@@ -7,7 +7,3 @@ COPY src ./src
 
 RUN npm install && \
     npm run build
-
-FROM nginx:stable-alpine
-
-COPY --from=builder /app/dist /app/static
