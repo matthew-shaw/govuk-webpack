@@ -7,6 +7,9 @@ const path = require("path");
 module.exports = {
   mode: "production",
   devtool: "source-map",
+  devServer: {
+    static: "./dist",
+  },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
     filename: "main.min.js",
