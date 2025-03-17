@@ -73,7 +73,7 @@ Rebuild distribution assets automatically when source is changed:
 npm run watch
 ```
 
-## Run dev server
+### Run dev server
 
 Start a simple web server with live reloading:
 
