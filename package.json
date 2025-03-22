@@ -25,6 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
+    "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
@@ -32,6 +33,7 @@
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "npm-check-updates": "^17.1.15",
+    "postcss-loader": "^8.1.1",
     "prettier": "^3.5.3",
     "sass": "^1.86.0",
     "sass-loader": "^16.0.5",
