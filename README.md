@@ -32,7 +32,7 @@ By default, the following components are imported, because they are used in the 
 - [Header](https://design-system.service.gov.uk/components/header/)
 - [Skip link](https://design-system.service.gov.uk/components/skip-link/)
 
-Simply comment out, or uncomment, any other components in `main.scss` that you need to exclude or include.
+Simply uncomment any other components in `main.scss` that you need to use.
 
 The same approach applies to JS; the `main.mjs` file at `/src/js` only imports and creates the components that are used:
 
@@ -98,9 +98,3 @@ ncu --target patch -u
 ```shell
 ncu --target minor -u
 ```
-
-### Support Internet Explorer
-
-Versions of IE below 11 are not supported. IE 11 will not run GOV.UK JavaScript, but its CSS is compatible.
-
-If you need to change which browsers are targeted for JS transpilation, the `.browserslistrc` file contains those supported, taken directly from the GOV.UK supported list. Changing this is _probably_ not a good idea though and should be discouraged, see [GOV.UK Frontend browser support](https://frontend.design-system.service.gov.uk/browser-support/).
