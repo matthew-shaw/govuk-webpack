@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,sass,linux,macos,windows,jetbrains+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,sass,linux,macos,windows,jetbrains+all,visualstudiocode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -244,6 +244,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
+# dist
 
 # Gatsby files
 .cache/
@@ -293,6 +294,7 @@ out
 
 ### Sass ###
 .sass-cache/
+# *.css.map
 *.sass.map
 *.scss.map
 
@@ -341,4 +343,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
+# End of https://www.toptal.com/developers/gitignore/api/git,node,sass,linux,macos,windows,jetbrains+all,visualstudiocode
