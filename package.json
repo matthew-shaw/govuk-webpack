@@ -4,11 +4,12 @@
   "description": "GOV.UK Frontend with Webpack",
   "private": true,
   "scripts": {
+    "prebuild": "npm run format:check && npm run lint:check",
     "build": "webpack",
     "format:check": "prettier src --check",
     "format:fix": "prettier src --write",
-    "lint:check": "eslist src",
-    "lint:fix": "eslist src --fix",
+    "lint:check": "eslint src",
+    "lint:fix": "eslint src --fix",
     "watch": "webpack --watch"
   },
   "repository": {
@@ -38,7 +39,6 @@
     "html-webpack-plugin": "^5.6.3",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-webpack-plugin": "^5.0.0",
     "globals": "^16.0.0",
     "mini-css-extract-plugin": "^2.9.2",
     "npm-check-updates": "^17.1.16",

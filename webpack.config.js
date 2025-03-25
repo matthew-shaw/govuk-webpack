@@ -1,6 +1,5 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
@@ -82,9 +81,6 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new ESLintPlugin({
-      extensions: ["js", "mjs", "cjs"],
-    }),
   ],
   resolve: {
     modules: [path.resolve(__dirname, "node_modules")],
