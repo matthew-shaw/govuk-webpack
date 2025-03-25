@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "format": "prettier src --check",
+    "format:check": "prettier src --check",
     "format:fix": "prettier src --write",
-    "lint": "eslist src",
+    "lint:check": "eslist src",
     "lint:fix": "eslist src --fix",
     "watch": "webpack --watch"
   },
