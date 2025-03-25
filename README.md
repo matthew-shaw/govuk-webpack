@@ -40,7 +40,7 @@ By default, the following components are imported, because they are used in the 
 
 Simply uncomment any other components in `main.scss` that you need to use.
 
-The same approach applies to JS; the `main.mjs` file at `/src/js` only imports and creates the components that are used:
+The same approach applies to JS; the `main.mjs` file at `/src/js` only imports JS for the components being used:
 
 - Header
 - Skip link
@@ -90,7 +90,7 @@ npm run lint:fix
 
 ### Build assets
 
-Output compiled CSS, JS, fonts and images to `./dist`:
+Use [Webpack](https://webpack.js.org/) loaders and plugins to output CSS, JS, fonts and images to `./dist`:
 
 ```shell
 npm run build
@@ -114,7 +114,7 @@ npm start
 
 ### Update dependencies
 
-To update Node package dependencies (such as [govuk-frontend](https://www.npmjs.com/package/govuk-frontend)), use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates):
+Use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) to update Node package dependencies (such as [govuk-frontend](https://www.npmjs.com/package/govuk-frontend)):
 
 ```shell
 ncu -u
