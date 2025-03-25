@@ -10,7 +10,8 @@
     "format:fix": "prettier src --write",
     "lint:check": "eslint src",
     "lint:fix": "eslint src --fix",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
