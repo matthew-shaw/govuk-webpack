@@ -43,8 +43,9 @@ Simply uncomment any other components in `main.scss` that you need to use.
 The same approach applies to JS; the `main.mjs` file at `/src/js` only imports and creates the components that are used:
 
 - Header
+- Skip link
 
-> **Note**: Although there is JS for the Header component, this is not needed if using the newer [Service navigation](https://design-system.service.gov.uk/components/service-navigation/) component alongside it.
+> **Note**: The JS for the Header component is not needed when using the newer [Service navigation](https://design-system.service.gov.uk/components/service-navigation/) component alongside it.
 
 For comparison (using GOV.UK Frontend v5.9.0):
 
@@ -57,10 +58,34 @@ For comparison (using GOV.UK Frontend v5.9.0):
 
 ### Format source code
 
-Use [Prettier](https://prettier.io/), an opinionated code formatter, for consistency:
+Use [Prettier](https://prettier.io/), an opinionated code formatter, for consistency.
+
+To check formatting (without changing):
 
 ```shell
-npm run format
+npm run format:check
+```
+
+To reformat files:
+
+```shell
+npm run format:fix
+```
+
+### Lint source code
+
+Use [ESLint](https://eslint.org/) to statically analyse your code to quickly find problems.
+
+To check for issues:
+
+```shell
+npm run lint:check
+```
+
+To attempt to automatically fix issues:
+
+```shell
+npm run lint:fix
 ```
 
 ### Build assets
