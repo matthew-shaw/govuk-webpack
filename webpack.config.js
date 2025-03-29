@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, "dist"),
     compress: true,
-    port: 8000
+    port: 8000,
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
