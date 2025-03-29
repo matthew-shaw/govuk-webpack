@@ -12,11 +12,17 @@ This repo demonstrates how to use [Webpack](https://webpack.js.org/) to bundle, 
 
 ## Prerequisites
 
-- [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm)
+- A supported LTS version of [Node.js](https://nodejs.org/en)
+- [Node Version Manager](https://github.com/nvm-sh/nvm) (optional)
+- [Docker](https://www.docker.com/) (optional)
 
 ## Get started
 
-1. Install the correct version of [Node.js](https://nodejs.org/en). This is determined by the `.nvmrc` file and is typically the latest LTS release codename.
+You can run on your local host, or in a Docker container:
+
+### On your host
+
+1. Install Node, preferably using `nvm`. The version is set in the `.nvmrc` file and is typically the latest LTS release codename.
 
    ```shell
    nvm install
@@ -28,13 +34,27 @@ This repo demonstrates how to use [Webpack](https://webpack.js.org/) to bundle, 
    npm install
    ```
 
+### Using Docker
+
+1. Build the image
+
+   ```shell
+   docker build -t govuk-webpack:latest .
+   ```
+
+2. Run the container
+
+   ```shell
+   docker run -p 8000:8000 govuk-webpack:latest
+   ```
+
 ## How to
 
 ### Use GOV.UK Design System components
 
 The `main.scss` file at `/src/scss` is highly selective about which `components` are imported above the required `base`, `core`, `objects`, `utilities` and `overrides`. Components account for around 70% of the output CSS, so should only be included if they are used in the service, in order to keep distributon file sizes small.
 
-By default, the following components are imported, because they are used in the [default page template](https://design-system.service.gov.uk/styles/page-template/#default):
+By default, the following components are imported:
 
 - [Footer](https://design-system.service.gov.uk/components/footer/)
 - [Header](https://design-system.service.gov.uk/components/header/)
@@ -114,6 +134,8 @@ Start a simple web server with live reloading:
 ```shell
 npm start
 ```
+
+Go to <http://localhost:8000>
 
 ### Update dependencies
 
