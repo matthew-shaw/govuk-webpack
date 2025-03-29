@@ -15,7 +15,7 @@ module.exports = {
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
-    filename: "main.min.js",
+    filename: "govuk.min.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -80,7 +80,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "main.min.css",
+      filename: "govuk.min.css",
     }),
     new CopyPlugin({
       patterns: [
