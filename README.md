@@ -137,20 +137,20 @@ npm start
 
 Go to <http://localhost:8000>
 
-### Update dependencies
+### Upgrade dependencies
 
-Use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) to update Node package dependencies (such as [govuk-frontend](https://www.npmjs.com/package/govuk-frontend)):
+Use [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) to upgrade Node package dependencies (such as [govuk-frontend](https://www.npmjs.com/package/govuk-frontend)):
 
 ```shell
-ncu -u
+npm run upgrade:latest
 ```
 
-If you want to be more cautious you can check only for patch or minor level updates:
+If you want to be more cautious you can apply only minor or patch level upgrades:
 
 ```shell
-ncu --target patch -u
+npm run upgrade:minor
 ```
 
 ```shell
-ncu --target minor -u
+npm run upgrade:patch
 ```
