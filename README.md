@@ -1,5 +1,7 @@
 # GOV.UK Frontend Webpack Demo
 
+![Screenshot](image.png)
+
 This repo demonstrates how to use [Webpack](https://webpack.js.org/) to bundle, compile and minify JavaScript, SCSS, images, and fonts, while optimising the output for performance. It uses various loaders and plugins to process files and generate the final build:
 
 - [**CSS Minimizer Webpack Plugin**](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/): Uses [CSSNANO](https://cssnano.github.io/cssnano/) to minimise the CSS output, reducing file size and improving page load times.
@@ -36,13 +38,14 @@ By default, the following components are imported, because they are used in the 
 
 - [Footer](https://design-system.service.gov.uk/components/footer/)
 - [Header](https://design-system.service.gov.uk/components/header/)
+- [Service navigation](https://design-system.service.gov.uk/components/service-navigation/)
 - [Skip link](https://design-system.service.gov.uk/components/skip-link/)
 
 Simply uncomment any other components in `main.scss` that you need to use.
 
 The same approach applies to JS; the `main.mjs` file at `/src/js` only imports JS for the components being used:
 
-- Header
+- Service navigation
 - Skip link
 
 > **Note**: The JS for the Header component is not needed when using the newer [Service navigation](https://design-system.service.gov.uk/components/service-navigation/) component alongside it.
