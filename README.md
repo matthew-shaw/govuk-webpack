@@ -74,12 +74,12 @@ The same approach applies to JS; the `main.mjs` file at `/src/js` only imports J
 
 For comparison (using GOV.UK Frontend v5.9.0):
 
-| Asset         | Size (KB) |
-| ------------- | --------- |
-| All CSS       | 122       |
-| Selective CSS | 47 (-61%) |
-| All JS        | 46        |
-| Selective JS  | 5 (-89%)  |
+| Asset           | Size (KB) |
+| --------------- | --------- |
+| Precompiled CSS | 127       |
+| Selective CSS   | 57 (-55%) |
+| Precompiled JS  | 49        |
+| Selective JS    | 8 (-84%)  |
 
 ### Format source code
 
