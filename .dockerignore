@@ -3,7 +3,7 @@
 .gitignore
 .nvmrc
 dist
-image.png
 LICENSE
 node_modules
 README.md
+screenshot.png
