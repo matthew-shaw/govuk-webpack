@@ -1,5 +1,7 @@
 # GOV.UK Frontend Webpack Demo
 
+![Static Badge](https://img.shields.io/badge/GOV.UK%20Frontend-v5.9.0-blue)
+
 ![Screenshot](image.png)
 
 This repo demonstrates how to use [Webpack](https://webpack.js.org/) to bundle, compile and minify JavaScript, SCSS, images, and fonts, while optimising the output for performance. It uses various loaders and plugins to process files and generate the final build:
