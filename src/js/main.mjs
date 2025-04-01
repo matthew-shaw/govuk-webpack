@@ -7,11 +7,11 @@ import {
   //   ErrorSummary,
   //   ExitThisPage,
   //   FileUpload,
-  //   Header,
+  Header,
   //   NotificationBanner,
   //   PasswordInput,
   //   Radios,
-  ServiceNavigation,
+  //   ServiceNavigation,
   SkipLink,
   //   Tabs,
 } from "govuk-frontend";
@@ -23,10 +23,10 @@ import {
 // createAll(ErrorSummary);
 // createAll(ExitThisPage);
 // createAll(FileUpload);
-// createAll(Header);
+createAll(Header);
 // createAll(NotificationBanner);
 // createAll(PasswordInput);
 // createAll(Radios);
-createAll(ServiceNavigation);
+// createAll(ServiceNavigation);
 createAll(SkipLink);
 // createAll(Tabs);
