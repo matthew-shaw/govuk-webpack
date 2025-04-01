@@ -1,9 +1,15 @@
+const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const postcssPresetEnv = require("postcss-preset-env");
+
+const PATHS = {
+  src: path.join(__dirname, "src"),
+};
 
 module.exports = {
   mode: "production",
@@ -81,6 +87,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "govuk.min.css",
+    }),
+    new PurgeCSSPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
     new CopyPlugin({
       patterns: [
