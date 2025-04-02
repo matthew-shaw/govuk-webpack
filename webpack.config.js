@@ -21,7 +21,7 @@ module.exports = {
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
-    filename: "govuk.min.js",
+    filename: "govuk.[contenthash].min.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -86,7 +86,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "govuk.min.css",
+      filename: "govuk.[contenthash].min.css",
     }),
     new PurgeCSSPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
