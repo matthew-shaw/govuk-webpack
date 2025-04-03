@@ -11,7 +11,7 @@ import {
   //   NotificationBanner,
   //   PasswordInput,
   //   Radios,
-  //   ServiceNavigation,
+  ServiceNavigation,
   SkipLink,
   //   Tabs,
 } from "govuk-frontend";
@@ -27,6 +27,6 @@ createAll(Header);
 // createAll(NotificationBanner);
 // createAll(PasswordInput);
 // createAll(Radios);
-// createAll(ServiceNavigation);
+createAll(ServiceNavigation);
 createAll(SkipLink);
 // createAll(Tabs);

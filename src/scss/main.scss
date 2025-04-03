@@ -22,10 +22,10 @@ $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 // @import "govuk-frontend/dist/govuk/components/accordion";
 // @import "govuk-frontend/dist/govuk/components/back-link";
 // @import "govuk-frontend/dist/govuk/components/breadcrumbs";
-// @import "govuk-frontend/dist/govuk/components/button";
+@import "govuk-frontend/dist/govuk/components/button";
 // @import "govuk-frontend/dist/govuk/components/character-count";
 // @import "govuk-frontend/dist/govuk/components/checkboxes";
-// @import "govuk-frontend/dist/govuk/components/cookie-banner";
+@import "govuk-frontend/dist/govuk/components/cookie-banner";
 // @import "govuk-frontend/dist/govuk/components/date-input";
 // @import "govuk-frontend/dist/govuk/components/details";
 // @import "govuk-frontend/dist/govuk/components/error-message";
@@ -46,7 +46,7 @@ $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 // @import "govuk-frontend/dist/govuk/components/phase-banner";
 // @import "govuk-frontend/dist/govuk/components/radios";
 // @import "govuk-frontend/dist/govuk/components/select";
-// @import "govuk-frontend/dist/govuk/components/service-navigation";
+@import "govuk-frontend/dist/govuk/components/service-navigation";
 @import "govuk-frontend/dist/govuk/components/skip-link";
 // @import "govuk-frontend/dist/govuk/components/summary-list";
 // @import "govuk-frontend/dist/govuk/components/table";
@@ -64,13 +64,13 @@ $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 // Utilities, for example govuk-clearfix or govuk-visually-hidden.
 // Approximately 1% of the CSS output if you include everything.
 
-// @import "govuk-frontend/dist/govuk/utilities";
+@import "govuk-frontend/dist/govuk/utilities";
 
 // Overrides, used to adjust things like the amount of spacing on an
 // element. Override classes always include `-!-` in the class name.
 // Approximately 15% of the CSS output if you include everything.
 
-// @import "govuk-frontend/dist/govuk/overrides";
+@import "govuk-frontend/dist/govuk/overrides";
 
 /*
 // Alternatively, you can import the specific groups of overrides
