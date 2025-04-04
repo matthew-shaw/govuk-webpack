@@ -59,6 +59,7 @@ The `main.scss` file at `/src/scss` is highly selective about which `components`
 
 By default, the following components are imported:
 
+- [Cookie banner](https://design-system.service.gov.uk/components/cookie-banner/)
 - [Footer](https://design-system.service.gov.uk/components/footer/)
 - [Header](https://design-system.service.gov.uk/components/header/)
 - [Service navigation](https://design-system.service.gov.uk/components/service-navigation/)
@@ -78,9 +79,9 @@ For comparison (using GOV.UK Frontend v5.9.0):
 | Asset           | Size (KB) |
 | --------------- | --------- |
 | Precompiled CSS | 127       |
-| Selective CSS   | 57 (-55%) |
+| Selective CSS   | 21 (-83%) |
 | Precompiled JS  | 49        |
-| Selective JS    | 8 (-84%)  |
+| Selective JS    | 5 (-90%)  |
 
 ### Format source code
 
