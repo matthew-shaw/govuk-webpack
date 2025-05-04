@@ -1,6 +1,6 @@
 # GOV.UK Frontend Webpack Demo
 
-![Static Badge](https://img.shields.io/badge/GOV.UK%20Frontend-5.10.0-blue)
+![Static Badge](https://img.shields.io/badge/GOV.UK%20Frontend-v5.10.0-blue)
 
 ![Screenshot](screenshot.png)
 
