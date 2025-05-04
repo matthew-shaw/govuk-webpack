@@ -95,7 +95,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: "./node_modules/govuk-frontend/dist/govuk/assets",
+          from: "./node_modules/govuk-frontend/dist/govuk/assets/rebrand",
           to: "assets",
         },
       ],
