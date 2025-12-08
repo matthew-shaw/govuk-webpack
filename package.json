@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/matthew-shaw/govuk-webpack#readme",
   "dependencies": {
-    "govuk-frontend": "5.13.0"
+    "govuk-frontend": "6.0.0-beta.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
